@@ -10,7 +10,7 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 
 function CalcularPrecio ()
-{
+     {
   /*
   var cantlamparas;
   var precio;
@@ -55,45 +55,74 @@ cantidad=document.getElementById("Cantidad").value;
 marca=document.getElementById("Marca").value;
 
 
-
-   precio=35
+precio=35;
 
    switch (cantidad) {
-     case "3":
+     
+          case "6":{
+         
+          document.getElementById("precioDescuento").value=cantidad*precio*0.50
 
-       switch (marca) {
-         case "Argentina Luz":
-
-         document.getElementById("precioDescuento").value=cantidad*35/100;
-
+        
+   
+         }
+    case "5":
+         switch (marca) {
+           case "ArgentinaLuz":
+           
+           document.getElementById("precioDescuento").value=cantidad*precio*0.40
            break;
-         case "Felipe Lamparas":
+          
+           default:
+           document.getElementById("precioDescuento").value=cantidad*precio*0.30
+             break;
+         }
+   
+    case "4":
 
-         document.getElementById("precioDescuento").value=cantidad*35/100;
+          switch (marca) {
+            case "ArgentinaLuz":
+            case "FelipeLamparas":
 
-         break
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            document.getElementById("precioDescuento").value=cantidad*precio*0.25
+              break;
+          
+            default:
+            document.getElementById("precioDescuento").value=cantidad*precio*0.20
+              break;
+          }
+          
+    
+    case "1":
+    case "2":
+    document.getElementById("precioDescuento").value=cantidad*precio*1
+  
 
 
 
+         
+   case "3":
+   
+        switch (marca)           { 
+                      
+         case "ArgentinaLuz":
 
+         document.getElementById("precioDescuento").value=cantidad*precio*0.15
+    
+   
+         case "FelipeLamparas":
 
+         document.getElementById("precioDescuento").value=cantidad*precio*0.10
 
+       default:
 
-                  }
-}
+        document.getElementById("precioDescuento").value=cantidad*precio*0.5
+       
+                        break }
+     }
+     
+     {         
+         c
+       
+       }
+      }
