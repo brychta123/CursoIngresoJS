@@ -1,33 +1,16 @@
 
 function mostrar()
 {
-	var mascotas1;
+    var ancho
+    var largo
+    var perimetro
+    ancho=prompt("ingrese ancho de rectangulo");
+    largo=prompt("ingrese largo de rectangulo");
+    perimetro=(ancho*largo)*2;
+    alert("el permitro del rectangulo es"+perimetro);
 
-    var mascotas2;
-
-    var mascotas3;
-
-    var mascotas4;
-
-    mascotas1=prompt("primer mascota");
-
-    mascotas2=prompt("segunda mascota");
-
-    mascotas3=prompt("pesoprimermascota")
-
-    mascotas4=prompt("pesosegundamascota")
-
-    mascotas3=parseint(mascotas3);
-
-    mascotas4=parseint(mascotas4);
-
-    alert("hola"mascotas1);
-
-
-
-}
 
     
 
   
-    
+}
